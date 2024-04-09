@@ -18,7 +18,9 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
-    TimeController controller = Get.put(TimeController());
+
+    final TimeController controller = Get.put(TimeController());
+
     return Scaffold(
       backgroundColor: Colors.white, 
       body: Center(
@@ -45,7 +47,7 @@ class _DashboardState extends State<Dashboard> {
                     },
                     style: ElevatedButton.styleFrom(
                       foregroundColor: Colors.black,
-                      backgroundColor: Colors.blueAccent.withOpacity(0.5),
+                      backgroundColor: Colors.grey.shade100,
                       padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
